@@ -4,12 +4,13 @@ import org.lwjgl.input.Keyboard;
 
 import me.adam077x.frostbite.event.Event;
 import me.adam077x.frostbite.event.events.UpdateEvent;
+import me.adam077x.frostbite.module.Category;
 import me.adam077x.frostbite.module.Module;
 
 public class Fly extends Module{
 
 	public Fly() {
-		super(Keyboard.KEY_F, "Fly");
+		super(Keyboard.KEY_F, "Fly", Category.PLAYER);
 	}
 
 	@Override

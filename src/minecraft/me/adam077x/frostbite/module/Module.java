@@ -2,16 +2,20 @@ package me.adam077x.frostbite.module;
 
 import me.adam077x.frostbite.event.Event;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.FontRenderer;
 
 public class Module {
 	private int key;
 	private String name;
 	private boolean toggled;
+	private Category category;
 	public Minecraft mc = Minecraft.getMinecraft();
+	public FontRenderer fr = Minecraft.getMinecraft().fontRendererObj;
 	
-	public Module(int key, String name) {
+	public Module(int key, String name, Category category) {
 		this.key = key;
 		this.name = name;
+		this.category = category;
 		toggled = false;
 	}
 	
@@ -38,5 +42,9 @@ public class Module {
 
 	public boolean isToggled() {
 		return toggled;
+	}
+
+	public Category getCategory() {
+		return category;
 	}
 }

@@ -5,13 +5,14 @@ import org.lwjgl.input.Keyboard;
 import me.adam077x.frostbite.Frostbite;
 import me.adam077x.frostbite.event.Event;
 import me.adam077x.frostbite.event.events.RenderEvent;
+import me.adam077x.frostbite.module.Category;
 import me.adam077x.frostbite.module.Module;
 import me.adam077x.frostbite.module.ModuleManager;
 
 public class Hud extends Module{
 
 	public Hud() {
-		super(Keyboard.KEY_H, "Hud");
+		super(Keyboard.KEY_H, "Hud", Category.MISC);
 	}
 	
 	public void onEvent(Event e) {

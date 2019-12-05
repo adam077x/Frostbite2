@@ -4,12 +4,13 @@ import org.lwjgl.input.Keyboard;
 
 import me.adam077x.frostbite.event.Event;
 import me.adam077x.frostbite.event.events.UpdateEvent;
+import me.adam077x.frostbite.module.Category;
 import me.adam077x.frostbite.module.Module;
 
 public class WaterWalk extends Module{
 
 	public WaterWalk() {
-		super(Keyboard.KEY_J, "WaterWalk");
+		super(Keyboard.KEY_J, "WaterWalk", Category.PLAYER);
 	}
 	
 	public void onEvent(Event e) {
