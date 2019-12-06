@@ -12,7 +12,7 @@ import me.adam077x.frostbite.module.ModuleManager;
 public class Hud extends Module{
 
 	public Hud() {
-		super(Keyboard.KEY_H, "Hud", Category.MISC);
+		super(Keyboard.KEY_H, "Hud", Category.RENDER);
 	}
 	
 	public void onEvent(Event e) {

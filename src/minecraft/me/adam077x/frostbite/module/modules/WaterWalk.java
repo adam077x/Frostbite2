@@ -3,7 +3,6 @@ package me.adam077x.frostbite.module.modules;
 import org.lwjgl.input.Keyboard;
 
 import me.adam077x.frostbite.event.Event;
-import me.adam077x.frostbite.event.events.UpdateEvent;
 import me.adam077x.frostbite.module.Category;
 import me.adam077x.frostbite.module.Module;
 
